@@ -32,6 +32,7 @@
 			<%=tagline %>
 			</h3>
 			<% 
+				response.setIntHeader("Refresh", 5); //5초마다 페이지가 리프레쉬(F5) 됩니다.
 				Date day = new java.util.Date();
 				String am_pm;
 				int hour = day.getHours();

@@ -8,6 +8,7 @@
 <html>
 <head>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script type="text/javascript" src = "ahead_time.js"></script>
 <title>상품 목록</title>
 </head>
 <body>
@@ -17,6 +18,7 @@
 			<h1 class = "display-3">상품 목록</h1>
 		</div>
 	</div>
+	
 	
 	<%
 		ArrayList<Product> listOfProducts = productDAO.getAllProducts();
@@ -44,5 +46,6 @@
 	</div>
 	
 	<jsp:include page="footer.jsp"></jsp:include>
+	<jsp:include page="ahead_timer.jsp"></jsp:include> <!-- 계속해서 변경되는 시간(현재시간 반영) -->
 </body>
 </html>
