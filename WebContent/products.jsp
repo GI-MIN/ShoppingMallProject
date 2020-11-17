@@ -46,6 +46,6 @@
 	</div>
 	
 	<jsp:include page="footer.jsp"></jsp:include>
-	<jsp:include page="ahead_timer.jsp"></jsp:include> <!-- 계속해서 변경되는 시간(현재시간 반영) -->
+	<!--<jsp:include page="ahead_timer.jsp"></jsp:include>--> <!-- 계속해서 변경되는 시간(현재시간 반영) -->
 </body>
 </html>
