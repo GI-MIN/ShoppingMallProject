@@ -3,7 +3,8 @@
     
 <%@page import="java.util.ArrayList" %>
 <%@page import="dto.Product" %>
-<jsp:useBean id = "productDAO" class="dao.ProductRepository" scope="session" />
+<%@page import="dao.ProductRepository" %>
+<!--<jsp:useBean id = "productDAO" class="dao.ProductRepository" scope="session" />-->
 <!DOCTYPE html>
 <html>
 <head>
@@ -21,7 +22,8 @@
 	
 	
 	<%
-		ArrayList<Product> listOfProducts = productDAO.getAllProducts();
+		ProductRepository dao = ProductRepository.getInstace();
+		ArrayList<Product> listOfProducts = dao.getAllProducts();
 	%>
 	
 	<div class = "container">

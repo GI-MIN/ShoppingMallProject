@@ -7,6 +7,12 @@ import dto.Product;
 public class ProductRepository {
 
 	private ArrayList<Product> listOfProducts = new ArrayList<Product>();
+	private static ProductRepository Instance = new ProductRepository();
+	
+	public static ProductRepository getInstace(){
+		return Instance;
+	}
+	
 	
 	public ProductRepository() {
 		
@@ -53,5 +59,9 @@ public class ProductRepository {
 		}
 		
 		return productById;
+	}
+	
+	public void addProduct(Product product) {
+		listOfProducts.add(product);
 	}
 }
