@@ -11,6 +11,7 @@ public class ProductRepository {
 	
 	public static ProductRepository getInstace(){
 		return Instance;
+		
 	}
 	
 	
